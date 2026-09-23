@@ -1,0 +1,43 @@
+name: User story
+description: A story written from the user's perspective, broken into sub-issues for dev tasks
+title: "[Story]: "
+labels: ["type:user-story"]
+body:
+  - type: input
+    id: persona
+    attributes:
+      label: As a...
+      placeholder: registered customer
+    validations:
+      required: true
+
+  - type: input
+    id: want
+    attributes:
+      label: I want...
+      placeholder: to reset my password without contacting support
+    validations:
+      required: true
+
+  - type: input
+    id: benefit
+    attributes:
+      label: So that...
+      placeholder: I can get back into my account quickly
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        After filing: set this issue's **Type** to `User Story`, then break it into **sub-issues** for the actual dev tasks.
