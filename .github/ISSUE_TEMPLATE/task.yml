@@ -1,0 +1,21 @@
+name: Task
+description: A piece of work that isn't a bug or a new feature
+type: Task
+body:
+  - type: textarea
+    id: task_description
+    attributes:
+      label: Task description
+      description: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: done_when
+    attributes:
+      label: Done when
+      description: Optional. A checklist that defines done.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false

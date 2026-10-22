@@ -1,0 +1,22 @@
+name: Feature request / Improvement / Change request
+description: Ask for a new feature, an improvement or a change to existing behaviour
+type: Feature
+body:
+  - type: textarea
+    id: request_description
+    attributes:
+      label: Feature request description
+      description: What do you need, and why? Say whether this is a new feature, an improvement or a change request.
+    validations:
+      required: true
+  - type: textarea
+    id: request_links
+    attributes:
+      label: Designs, documents and links
+      description: Optional. Figma, docs or other links. You can also drag and drop files here.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        After creating the issue, set **Request kind**, **Requested on** and (once approved) **Approved on** in the sidebar.

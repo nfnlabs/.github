@@ -1,0 +1,44 @@
+name: Story
+description: A requirement written around a goal and a user flow
+type: Story
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should the user be able to do, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: user_flow
+    attributes:
+      label: User flow
+      description: The steps the user takes, from start to finish.
+      placeholder: |
+        1. The user ...
+        2. The system ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: Business rules
+      description: Optional. Constraints, calculations or conditions that apply.
+    validations:
+      required: false
+  - type: textarea
+    id: story_links
+    attributes:
+      label: Designs, documents and links
+      description: Optional. Figma, docs or other links. You can also drag and drop files here.
+    validations:
+      required: false

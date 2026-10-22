@@ -1,0 +1,18 @@
+name: Epic
+description: A large body of work that will be broken into stories, features and tasks
+type: Epic
+body:
+  - type: textarea
+    id: epic_description
+    attributes:
+      label: Epic description
+      description: What is this epic about, and what outcome should it deliver?
+    validations:
+      required: true
+  - type: textarea
+    id: epic_links
+    attributes:
+      label: Designs, documents and links
+      description: Optional. Figma, docs or other links. You can also drag and drop files here.
+    validations:
+      required: false
