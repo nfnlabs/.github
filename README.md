@@ -2,7 +2,16 @@
 
 Org-wide default community health files for `nfnlabs`.
 
-Any repo in the org that doesn't define its own `.github/ISSUE_TEMPLATE/`
-inherits the issue templates defined here (Bug report, Feature request,
-Task, User story). See the team's process docs for the full workflow this
-supports.
+## Issues
+
+Issues in this organization do not use repository issue templates. Instead, the
+structure comes from the organization settings:
+
+- **Issue types** (Org settings > Planning > Issue types): Bug, Task, Story,
+  Feature and Epic. Pick the type when you create an issue.
+- **Issue fields** (Org settings > Planning > Issue fields): Priority, Severity,
+  Environment, Platform, Discipline, Bug category, Effort, Start date and
+  Target date.
+
+Do not add `.github/ISSUE_TEMPLATE/` files to this repository or to individual
+repositories, or they will override this setup.
